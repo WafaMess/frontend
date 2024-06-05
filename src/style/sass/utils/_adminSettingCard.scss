@@ -1,0 +1,29 @@
+.column-card{
+    display: flex;
+    flex-direction: column;
+    padding:2rem 3rem;
+    align-items: start;
+    border:1px solid rgb(219, 219, 219);
+    // width:fit-content;
+    height:fit-content;
+    width:40%;
+
+
+    &__title{
+        font-size: 2rem;
+        font-weight: bolder;
+        color:black;
+        margin-bottom:4rem;
+
+    }
+
+    &__option{
+        display: flex;
+        width:100%;
+        align-items: center;
+        justify-content: space-between;
+        gap:4rem;
+        margin-bottom:2rem;
+        color:grey;
+    }
+}

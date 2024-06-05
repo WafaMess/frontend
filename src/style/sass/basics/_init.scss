@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color:inherit;
+    text-decoration:none ;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 16px;
+    width:100%;
+    height:100%;
+}
+
+#root{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s linear;
+     *{
+        transition: inherit;
+    }
+}
+
+.container{
+    width:80%;
+    height:90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.main-section{
+    height:100%;
+    border: 1px solid #D2D2D2;
+    overflow: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+
+.page{
+    width:100%;
+    height:100%;
+}
+
+/* Slider.css */
+
+/* Style for the previous button */
+.slick-prev {
+    background-color: grey !important;
+    border-radius: 50%; /* Optional: make it round */
+    width: 4rem !important; /* Optional: adjust the size */
+    height: 4rem !important; /* Optional: adjust the size */
+    z-index: 1; /* Ensure it's above other content */
+  }
+  
+  /* Style for the next button */
+  .slick-next {
+    background-color: grey !important;
+    border-radius: 50%; /* Optional: make it round */
+    width: 4rem !important; /* Optional: adjust the size */
+    height: 4rem !important; /* Optional: adjust the size */
+    z-index: 1; /* Ensure it's above other content */
+  }
+  
+  /* Optional: Adjust the positioning of the arrows */
+  .slick-prev:before, .slick-next:before {
+    color: white !important; /* Change the arrow color */
+  }
+  
+  /* Optional: Ensure the arrows are properly centered */
+  .slick-prev {
+    left: 10px; /* Adjust left position */
+  }
+  
+  .slick-next {
+    right: 10px; /* Adjust right position */
+  }

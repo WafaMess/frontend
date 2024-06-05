@@ -1,0 +1,36 @@
+.modal{
+    width:40%;
+    background-color: white;
+    animation: appear .3s linear ;
+    border-radius: 1rem;
+    padding:2rem;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    @keyframes appear  {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+
+    &__close{
+        width:4rem;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+
+    &-err{
+        &__text{
+            color:red;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 3rem;
+            margin-block:5rem;
+        }
+    }
+}

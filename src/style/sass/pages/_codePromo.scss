@@ -1,0 +1,38 @@
+.page--code-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding-top:7rem;
+    font-weight: bolder;
+
+
+    &__title{
+        font-size: 3rem;
+        margin-bottom: 5rem;;
+    }
+
+    &__img{
+        width:20%;
+        margin-bottom:5rem;
+    }
+
+    &__btns{
+        display: flex;
+        gap:1rem;
+
+        &>button{
+            width:15rem;
+            padding-block: 2rem;
+            background-color: black;
+            color:white;
+            border:none;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        &>button:nth-child(2){
+            color:black;
+            background-color: rgb(230, 230, 230);
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <g id="Groupe_26541" data-name="Groupe 26541" transform="translate(-295 -363)">
+    <g id="Rectangle_10074" data-name="Rectangle 10074" transform="translate(295 363)" fill="#fff" stroke="red" stroke-width="2">
+      <rect width="180" height="180" rx="13" stroke="none"/>
+      <rect x="1" y="1" width="178" height="178" rx="12" fill="none"/>
+    </g>
+    <text id="NON" transform="translate(348 518)" fill="red" font-size="33" font-family="NunitoSans-Bold, Nunito Sans" font-weight="700"><tspan x="0" y="0">NON</tspan></text>
+    <path id="Icon_material-close" data-name="Icon material-close" d="M67.292,13.522,61.27,7.5,37.4,31.374,13.522,7.5,7.5,13.522,31.374,37.4,7.5,61.27l6.022,6.022L37.4,43.418,61.27,67.292l6.022-6.022L43.418,37.4Z" transform="translate(347.5 392.5)" fill="red"/>
+  </g>
+</svg>

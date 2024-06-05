@@ -1,0 +1,41 @@
+.header{
+    width:100%;
+    background-color: black;
+    height:15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+
+    &>img{
+        width:10rem;
+
+        &:first-child{
+            background-color: white;
+            width:5rem;
+            border-radius: 2.5rem;
+            padding:1rem;
+            cursor: pointer;
+        }
+    }
+
+    &--admin{
+        justify-content: space-between;
+        padding-inline:10%;
+
+        &>div:first-child{
+            color:white;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        &>button{
+            padding:2rem;
+            font-size: 1.8rem;
+            font-weight: bolder;
+            color:black;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}

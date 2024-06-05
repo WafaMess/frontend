@@ -1,0 +1,35 @@
+.admin-nav-list{
+    display: flex;
+    padding:2rem 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    color:black;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    cursor: pointer;
+    
+    &>a{
+        padding:1rem;
+    }
+}
+
+
+.page--admin{
+
+    &-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:5rem;
+
+        &>button{
+            background-color: black;
+            color:white;
+            padding:2rem 3rem;
+            font-size: 2rem;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+}

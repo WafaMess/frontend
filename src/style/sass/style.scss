@@ -1,0 +1,28 @@
+// init 
+@forward "./basics/init";
+
+
+// layouts
+@forward "./layouts/header";
+
+
+//components
+@forward "./components/NumberKeyboard";
+
+
+// portals + modal
+@forward "./components/portals";
+@forward "./components/modals";
+
+// pages 
+@forward "./pages/mainPage";
+@forward "./pages/searchProductPage";
+@forward "./pages/codePromo";
+@forward "./pages/fidility";
+@forward "./pages/payment-methode";
+@forward "./pages/Home";
+@forward "./pages/_admin";
+
+
+//utils
+@forward "./utils/adminSettingCard";

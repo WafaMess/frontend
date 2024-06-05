@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <g id="Groupe_26542" data-name="Groupe 26542" transform="translate(-512 -363)">
+    <g id="Rectangle_10073" data-name="Rectangle 10073" transform="translate(512 363)" fill="#fff" stroke="#000" stroke-width="2">
+      <rect width="180" height="180" rx="13" stroke="none"/>
+      <rect x="1" y="1" width="178" height="178" rx="12" fill="none"/>
+    </g>
+    <text id="OUI" transform="translate(573 518)" font-size="33" font-family="NunitoSans-Bold, Nunito Sans" font-weight="700"><tspan x="0" y="0">OUI</tspan></text>
+    <path id="Icon_material-check" data-name="Icon material-check" d="M29.445,54.433,11.3,36.283,5.115,42.42l24.33,24.33L81.673,14.522,75.536,8.385Z" transform="translate(558.885 385.615)"/>
+  </g>
+</svg>
