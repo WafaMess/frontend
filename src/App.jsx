@@ -64,6 +64,7 @@ const App = () => {
           </Route>
           <Route path="/postal" element={<Postal />} />
           <Route path="/imprimer" element={<Imprimer />} />
+
           <Route path="/payment/methode" element={<PaymentMethode />} />
           <Route path="/payment/merci" element={<PaymentMerci />} />
         </Route>

@@ -142,9 +142,11 @@ const MainPage = ({ promoDetails }) => {
               setSelectedProductCodeToDeleteHander={
                 setSelectedProductCodeToDelete
               }
+              productStore={productStore}
             />
           </div>
           <div className="page-main__right__center">
+            <BarcodeScanner onError={handleError} />
             <div>
               <span
                 onClick={(_) => {
@@ -214,7 +216,7 @@ const MainPage = ({ promoDetails }) => {
             document.querySelector("#portals")
           )}
       </div>
-      <BarcodeScanner />
+      {/* <BarcodeScanner /> */}
     </>
   );
 };

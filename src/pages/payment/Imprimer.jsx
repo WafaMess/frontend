@@ -34,12 +34,8 @@ const Imprimer = () => {
 
         <div className="page--payment-methode__center">
           <div>
-            <span>Reste à payer</span>
+            <span>Total payer :</span>
             <span>{restToPay.toFixed(2) < 0 ? 0 : restToPay.toFixed(2)} €</span>
-          </div>
-          <div>
-            <span>Total commande</span>
-            <span>{totalPrice} €</span>
           </div>
         </div>
       </div>

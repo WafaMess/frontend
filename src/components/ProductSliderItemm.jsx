@@ -1,13 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-
-//productSlice Actions
 import { productSliceAction } from "../store/productSlice";
 import { useNavigate } from "react-router-dom";
 
 const ProductSliderItemm = ({ code, nom, prix, img }) => {
   const navigate = useNavigate();
-
   const dispatch = useDispatch();
 
   const addProductHandler = () => {
@@ -27,6 +24,7 @@ const ProductSliderItemm = ({ code, nom, prix, img }) => {
       <div onClick={addProductHandler}>
         <h1>{nom}</h1>
         <div>{parseFloat(prix)} $</div>
+        <img src={`http://localhost:3000/img/${img}`} alt={nom} />
       </div>
     </div>
   );

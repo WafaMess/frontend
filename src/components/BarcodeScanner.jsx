@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useDebounce } from "@uidotdev/usehooks";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { productSliceAction } from "../store/productSlice";
 import ProductSliderItemm from "../components/ProductSliderItemm";
 
@@ -26,8 +26,14 @@ const BarcodeScanner = () => {
         );
         if (response.data.status) {
           const productData = response.data.product;
-          dispatchStore(productSliceAction.addProduct(productData));
-          setProduct(productData); // Mettre à jour l'état avec les informations du produit
+          const formattedProduct = {
+            code: productData.codepr,
+            name: productData.nompr,
+            price: parseFloat(productData.prixl),
+            img: `http://localhost:3000/img/${productData.chemin_img}`,
+          };
+          dispatchStore(productSliceAction.addProduct(formattedProduct));
+          setProduct(formattedProduct); // Mettre à jour l'état avec les informations du produit
         } else {
           setProduct(null); // Réinitialiser le produit si aucune donnée n'est trouvée
         }
@@ -49,10 +55,12 @@ const BarcodeScanner = () => {
       />
       {product && (
         <ProductSliderItemm
-          product={product} // Passer le produit ici
+          code={product.code}
+          nom={product.name}
+          prix={product.price}
+          img={product.img}
         />
-      )}{" "}
-      {/* Afficher le produit scanné */}
+      )}
     </div>
   );
 };
