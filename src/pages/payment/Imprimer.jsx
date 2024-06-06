@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import ProductTable from "../../components/ProductTable";
 import { useSelector } from "react-redux";
 import { useReactToPrint } from "react-to-print";
+
 const Imprimer = () => {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
@@ -24,13 +25,18 @@ const Imprimer = () => {
     : totalPrice - promo;
   return (
     <div>
-      <div className="page page--payment-methode" ref={componentRef}>
-        <div className="page--payment-methode__top">
-          <div>
-            <span>commande</span>
-          </div>
+      <div className="page page--payment-methode  " ref={componentRef}>
+        {/* <div className="page--payment-methode__top"> */}
+        <div>
+          <span>Aures Group</span>
+        </div>
+        <div
+          className="table-container"
+          style={{ marginTop: "50px", marginLeft: "20px" }}
+        >
           <ProductTable />
         </div>
+        {/* //</div> */}
 
         <div className="page--payment-methode__center">
           <div>

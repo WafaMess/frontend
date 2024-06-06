@@ -1,0 +1,65 @@
+.print-container {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 100%;
+  }
+  
+  .print-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .print-container th,
+  .print-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .print-container th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+  }
+  
+  .print-container td {
+    font-size: 18px;
+  }
+  
+  .print-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .print-container tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .page--payment-methode__top,
+  .page--payment-methode__center,
+  .page--payment-methode__buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .page--payment-methode__buttons .btn {
+    background-color: #4e4e4e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .page--payment-methode__buttons .btn:hover {
+    background-color: #3e3e3e;
+  }
+  
+  .page--payment-methode__center div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
+  .page--payment-methode__center span {
+    margin-right: 10px;
+  }
+  
