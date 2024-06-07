@@ -697,3 +697,14 @@ body {
   margin-bottom: 2rem;
   color: grey;
 }
+
+
+
+/* fghj */
+/* styles.css */
+.barcode-scanner__input {
+  position: absolute;
+  left: -9999px;
+}
+
+/* fghj */

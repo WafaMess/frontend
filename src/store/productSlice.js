@@ -1,3 +1,6 @@
+// import { createSlice } from "@reduxjs/toolkit";
+//
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = { productImg: false, list: [] };
@@ -8,67 +11,43 @@ const productSlice = createSlice({
   reducers: {
     addProduct: (state, action) => {
       const newProduct = action.payload;
-      const productIsExist = state.list.find((e) => e.code == newProduct.code);
+      const productIsExist = state.list.find((e) => e.code === newProduct.code);
 
       if (productIsExist) {
-        const total =
-          (productIsExist.quantity + 1) *
-          parseFloat(Number(productIsExist.price));
-        return (state = {
-          productImg: newProduct.img,
-          list: state.list.map((e) => {
-            if (e.code == productIsExist.code) {
-              return { ...e, total, quantity: productIsExist.quantity + 1 };
-            } else {
-              return e;
-            }
-          }),
-        });
+        productIsExist.quantity += 1;
+        productIsExist.total =
+          productIsExist.quantity * parseFloat(productIsExist.price);
+        state.productImg = newProduct.img;
       } else {
-        return (state = {
-          productImg: newProduct.img,
-          list: [
-            ...state.list,
-            { ...newProduct, quantity: 1, total: newProduct.price },
-          ],
+        state.productImg = newProduct.img;
+        state.list.push({
+          ...newProduct,
+          quantity: 1,
+          total: parseFloat(newProduct.price),
         });
       }
     },
     removeProduct: (state, action) => {
       const productCode = action.payload;
-      const productIsExistWithOneTime = state.list.find((e) => {
-        return e.quantity === 1 && e.code == productCode;
-      });
-      if (productIsExistWithOneTime) {
-        return (state = {
-          productImg: false,
-          list: state.list.filter((e) => {
-            return e.code != productCode;
-          }),
-        });
-      } else {
-        return (state = {
-          productImg: false,
-          list: state.list.map((e) => {
-            if (e.code == productCode)
-              return {
-                ...e,
-                quantity: e.quantity - 1,
-                total: Number(e.total - e.price),
-              };
-            else return e;
-          }),
-        });
+      const product = state.list.find((e) => e.code === productCode);
+      if (product) {
+        if (product.quantity === 1) {
+          state.list = state.list.filter((e) => e.code !== productCode);
+        } else {
+          product.quantity -= 1;
+          product.total -= parseFloat(product.price);
+        }
+      }
+      if (state.list.length === 0) {
+        state.productImg = false;
       }
     },
-    cancel: (state, action) => {
-      return (state = { ...state, list: [] });
+    cancel: (state) => {
+      state.productImg = false;
+      state.list = [];
     },
-
     switchProductImg: (state, action) => {
-      const productImg = action.payload;
-
-      return (state = { ...state, productImg });
+      state.productImg = action.payload;
     },
   },
 });

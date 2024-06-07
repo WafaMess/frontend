@@ -18,7 +18,7 @@ const ProductTable = ({
       <table>
         <thead>
           <tr>
-            <th style={{ fontSize: "30px", textAlign: "center" }}>
+            <th style={{ fontSize: "20px", textAlign: "center" }}>
               Désignation
             </th>
             <th style={{ fontSize: "20px", textAlign: "center" }}>Prix</th>

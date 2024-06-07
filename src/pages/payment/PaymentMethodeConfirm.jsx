@@ -16,8 +16,8 @@ const PaymentMethodeConfirm = ({ returnHandler, orderHandler }) => {
       {/* //<div className="page--payment-methode__top" ref={componentRef}></div> */}
 
       <div className="page--payment-methode__center">
-        <span>Choisissez votre</span>
-        <span>mode de paiement</span>
+        <span>Suivez les indications</span>
+        <span>du lecteur de carte bancaire</span>
       </div>
       <div className="page--payment-methode__list">
         <img src="/payments/carteBancaire.svg" alt="" />

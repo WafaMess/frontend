@@ -24,7 +24,7 @@ const ProductSliderItemm = ({ code, nom, prix, img }) => {
       <div onClick={addProductHandler}>
         <h1>{nom}</h1>
         <div>{parseFloat(prix)} $</div>
-        <img src={`http://localhost:3000/img/${img}`} alt={nom} />
+        {/* <img src={`http://localhost:3000/img/${img}`} alt={nom} /> */}
       </div>
     </div>
   );
