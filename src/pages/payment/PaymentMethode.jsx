@@ -58,11 +58,11 @@ const PaymentMethode = () => {
       <div className="page--payment-methode__top">
         <div>
           <span>Reste à payer</span>
-          <span>{restToPay.toFixed(2) < 0 ? 0 : restToPay.toFixed(2)} €</span>
+          <span>{restToPay.toFixed(2) < 0 ? 0 : restToPay.toFixed(2)} DT</span>
         </div>
         <div>
           <span>Total commande</span>
-          <span>{totalPrice} €</span>
+          <span>{totalPrice} DT</span>
         </div>
       </div>
       {!continuePayment && (

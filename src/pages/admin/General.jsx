@@ -41,10 +41,10 @@ const General = () => {
             <span>langue</span>
             <input type="checkbox" name="" id="" />
           </div>
-          <div className="column-card__option">
+          {/* <div className="column-card__option">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
             <input type="checkbox" name="" id="" />
-          </div>
+          </div> */}
         </div>
         <div className="column-card">
           <div className="column-card__title">Led</div>

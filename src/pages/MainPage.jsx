@@ -181,7 +181,7 @@ const MainPage = ({ promoDetails }) => {
                     return parseFloat(prev + Number(current.total));
                   }, 0)
                   .toFixed(2)}{" "}
-                $
+                DT
               </span>
             </div>
           </div>
@@ -197,7 +197,7 @@ const MainPage = ({ promoDetails }) => {
                   return parseFloat(prev + Number(current.total));
                 }, 0)
               ).toFixed(2) - promo}{" "}
-              $
+              DT
             </span>
           </div>
         </div>
